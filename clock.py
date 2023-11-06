@@ -10,7 +10,8 @@ from queue import Queue
 
 class Heartbeat:
     """ Heartbeat object takes in wav, tempo, the division of the beat, and the buffer size
-        The object works by using """
+        The object works by referencing the callback to determine the number of samples between each
+        beat. Song, tempo, the division of the beat (1,.5,.25) and buffer size are arguments."""
     def __init__(self, song, tempo, beat_div, buffer_size):
         self.tempo = tempo
         self.genre = ''
